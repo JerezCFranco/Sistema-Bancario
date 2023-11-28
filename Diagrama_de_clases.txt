@@ -1,0 +1,18 @@
++-----------------+          +---------------------+
+|     Cliente     |          |  CuentaBancaria     |
++-----------------+          +---------------------+
+| -nombre         |          | -numeroCuenta       |
+| -direccion      |          | -titular            |
+| -cuentas: List  |          | -saldo              |
+| +agregarCuenta()|          +---------------------+
+| +eliminarCuenta()|          | +depositar()        |
+| +consultarSaldo()|          | +retirar()          |
+| +exportarCuentas()|          | +consultarSaldo()   |
++--------|--------+          +---------------------+
+         |
+         |  +-------------------+    +---------------------+
+         +->|   CuentaAhorro    |    |   CuentaCorriente   |
+            +-------------------+    +---------------------+
+            | -tasaInteres       |    | -limiteSobregiro    |
+            | +calcularIntereses()|    | +manejarSobregiro() |
+            +-------------------+    +---------------------+
